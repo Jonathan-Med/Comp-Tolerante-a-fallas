@@ -1,0 +1,14 @@
+public class Demo {
+    public static void main(String[] args) {
+        int nums[]=new int[4];
+        try {
+            System.out.println("aquí van las instrucciones que posiblemente tenga un error.");
+            nums[7]=10;
+        }catch (Aquí va el nombre del error que puede ocurrir){
+            System.out.println("Aquí van las instrucciones que se deben hacer si se cumple el error");
+        } finally {
+        System.out.println("Instrucciones que siempre se harán sin importar si hay error o no");
+    }
+}
+}
+
