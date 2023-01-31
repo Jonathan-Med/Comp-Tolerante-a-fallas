@@ -1,14 +1,15 @@
-public class Demo {
+public class ExcDemo {
     public static void main(String[] args) {
         int nums[]=new int[4];
         try {
-            System.out.println("aquí van las instrucciones que posiblemente tenga un error.");
+            System.out.println("Antes de que se genere la excepción.");
+            //generar una excepción de índice fuera de límites
             nums[7]=10;
-        }catch (Aquí va el nombre del error que puede ocurrir){
-            System.out.println("Aquí van las instrucciones que se deben hacer si se cumple el error");
+        }catch (ArrayIndexOutOfBoundsException exc){
+            //Capturando la excepción
+            System.out.println("Índice fuera de los límites!");
         } finally {
-        System.out.println("Instrucciones que siempre se harán sin importar si hay error o no");
+        System.out.println("Después de que se genere la excepción.");
     }
 }
 }
-
